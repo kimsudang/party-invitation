@@ -26,7 +26,37 @@ const ShareButtons = () => {
     };
 
     const handleKakao = () => {
-        toast.info("카카오톡 공유 기능은 준비 중입니다");
+        if (!window.Kakao) {
+            toast.error("카카오 SDK 로딩 중입니다. 잠시 후 다시 시도해주세요.");
+            return;
+        }
+
+        if (!window.Kakao.isInitialized()) {
+            window.Kakao.init(import.meta.env.VITE_KAKAO);
+        }
+
+        window.Kakao.Share.sendDefault({
+            objectType: "feed",
+            content: {
+                title: "산수연에 초대합니다",
+                description: "자세한 내용은 초대장을 확인해주세요",
+                imageUrl: "https://party-invitation-ochre.vercel.app/src/assets/kakao-img.png",
+                link: {
+                    mobileWebUrl: "https://party-invitation-ochre.vercel.app",
+                    webUrl: "https://party-invitation-ochre.vercel.app",
+                },
+            },
+            buttons: [
+                {
+                    title: "초대장 보기",
+                    link: {
+                        mobileWebUrl: "https://party-invitation-ochre.vercel.app",
+                        webUrl: "https://party-invitation-ochre.vercel.app",
+                    },
+                },
+            ],
+            installTalk: true,
+        });
     };
 
     const handleMap = () => {
