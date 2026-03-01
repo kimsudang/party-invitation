@@ -42,16 +42,16 @@ const InvitationCard = () => {
                 <div className="relative z-10 py-3 flex flex-col gap-3 items-center text-center">
                     <p className="mb-3 text-sm tracking-widest text-muted-fg italic font-light">Happy birthday</p>
 
-                    <h1 className="mb-10 text-4xl font-semibold tracking-wide text-invitation-title">초대합니다</h1>
+                    <h1 className="mb-10 text-5xl font-bold tracking-wide text-invitation-title">초대합니다</h1>
 
-                    <div className="mb-10 space-y-1 text-invitation-text">
-                        <p className="text-base">곽영애 여사님의</p>
-                        <p className="text-base">산수연에 여러분을 모십니다.</p>
+                    <div className="mb-10 space-y-2 text-invitation-text">
+                        <p className="text-lg font-medium">곽영애 여사님의</p>
+                        <p className="text-lg font-medium">산수연에 여러분을 모십니다.</p>
                     </div>
 
-                    <div className="space-y-1 text-invitation-text">
-                        <p className="text-lg font-medium">2026.03.21 (토) 오후 5시</p>
-                        <p className="text-sm text-muted-fg">더 클래식 500 라운지</p>
+                    <div className="space-y-2 text-invitation-text">
+                        <p className="text-xl font-semibold">2026.03.21 (토) 오후 5시</p>
+                        <p className="text-lg font-semibold text-muted-fg">더 클래식 500 라운지</p>
                     </div>
                 </div>
             </div>

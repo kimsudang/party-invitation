@@ -12,9 +12,9 @@ const ShareButton = ({
 }) => (
     <button
         onClick={onClick}
-        className="flex w-full items-center justify-center gap-2 rounded-full border border-invitation-border bg-transparent px-6 py-3.5 text-sm text-invitation-text transition-colors hover:bg-secondary-bg active:bg-secondary-bg"
+        className="flex w-full items-center justify-center gap-2 rounded-full border border-invitation-border bg-transparent px-6 py-4 text-base font-medium text-invitation-text transition-colors hover:bg-secondary-bg active:bg-secondary-bg"
     >
-        <Icon className="h-4 w-4" />
+        <Icon className="h-5 w-5" />
         {label}
     </button>
 );
