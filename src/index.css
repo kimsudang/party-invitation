@@ -1,1 +1,40 @@
 @import "tailwindcss";
+
+@theme {
+    --color-invitation-title: hsl(30, 15%, 18%);
+    --color-invitation-text: hsl(30, 10%, 30%);
+    --color-invitation-border: hsl(30, 20%, 78%);
+    --color-invitation-card: hsl(40, 40%, 97%);
+    --color-muted-fg: hsl(30, 8%, 50%);
+    --color-secondary-bg: hsl(40, 20%, 92%);
+    --color-subway-green: hsl(145, 60%, 38%);
+    --color-subway-olive: hsl(75, 45%, 40%);
+}
+
+@layer base {
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100dvh;
+    padding: 5% 5%;
+    background-image: url("./assets/background.png");
+    background-repeat: repeat;
+    background-color: #f5f0e8;
+    font-family: "Gowun Batang", serif;
+}
+
+#root {
+    min-height: 100dvh;
+    width: 100%;
+}
