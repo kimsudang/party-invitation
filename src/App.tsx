@@ -8,7 +8,7 @@ function App() {
     return (
         <>
             <Toaster position="top-center" richColors />
-            <main className="min-h-dvh w-full py-8">
+            <main className="min-h-dvh w-full">
                 <div className="mx-auto w-full max-w-sm flex flex-col gap-6">
                     <InvitationCard />
                     <MapSection />

@@ -18,9 +18,9 @@ const TransportSection = () => {
             <div className="mb-6">
                 <div className="mb-3 flex items-center justify-start gap-2 text-muted-fg">
                     <Train className="h-5 w-5" />
-                    <span className="text-base font-semibold">지하철</span>
+                    <span className="text-lg font-semibold">지하철</span>
                 </div>
-                <div className="space-y-2 text-base text-invitation-text">
+                <div className="space-y-2 text-lg text-invitation-text">
                     <div className="flex items-start gap-2">
                         <SubwayBadge line="2호선" color="hsl(145, 60%, 38%)" />
                         <span>건대입구역 5번 출구</span>
@@ -36,9 +36,9 @@ const TransportSection = () => {
             <div>
                 <div className="mb-3 flex items-center justify-start gap-2 text-muted-fg">
                     <Bus className="h-5 w-5" />
-                    <span className="text-base font-semibold">버스</span>
+                    <span className="text-lg font-semibold">버스</span>
                 </div>
-                <div className="space-y-1.5 text-base text-invitation-text">
+                <div className="space-y-1.5 text-lg text-invitation-text">
                     <div className="flex gap-4">
                         <span className="w-20 shrink-0 font-semibold text-muted-fg">간선버스</span>
                         <span>102, 240, 721</span>

@@ -51,7 +51,7 @@ const InvitationCard = () => {
 
                     <div className="space-y-2 text-invitation-text">
                         <p className="text-xl font-semibold">2026.03.21 (토) 오후 5시</p>
-                        <p className="text-lg font-semibold text-muted-fg">더 클래식 500 라운지</p>
+                        <p className="text-lg font-semibold text-muted-fg">더 클래식 500 3층 라구뜨</p>
                     </div>
                 </div>
             </div>

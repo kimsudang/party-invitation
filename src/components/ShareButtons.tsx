@@ -34,7 +34,7 @@ const ShareButtons = () => {
     };
 
     return (
-        <section className="px-6 pb-16">
+        <section className="pb-6">
             <div className="flex flex-col gap-2">
                 <ShareButton icon={Link} label="링크 공유하기" onClick={handleCopyLink} />
                 <ShareButton icon={MessageCircle} label="카카오톡 공유하기" onClick={handleKakao} />
