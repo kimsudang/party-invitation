@@ -2,7 +2,7 @@ import { Train, Bus } from "lucide-react";
 
 const SubwayBadge = ({ line, color }: { line: string; color: string }) => (
     <span
-        className="inline-flex items-center justify-center rounded px-2 py-0.5 text-xs font-bold text-white shrink-0"
+        className="inline-flex items-center justify-center rounded px-2 py-1 text-xs font-bold text-white shrink-0"
         style={{ backgroundColor: color }}
     >
         {line}
@@ -21,11 +21,11 @@ const TransportSection = () => {
                     <span className="text-lg font-semibold">지하철</span>
                 </div>
                 <div className="space-y-2 text-lg text-invitation-text">
-                    <div className="flex items-start gap-2">
+                    <div className="flex items-center gap-2">
                         <SubwayBadge line="2호선" color="hsl(145, 60%, 38%)" />
                         <span>건대입구역 5번 출구</span>
                     </div>
-                    <div className="flex items-start gap-2">
+                    <div className="flex items-center gap-2">
                         <SubwayBadge line="7호선" color="hsl(75, 45%, 40%)" />
                         <span>건대입구역 4번 출구 (롯데백화점 연결통로 이용)</span>
                     </div>
